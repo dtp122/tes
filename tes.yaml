@@ -10,6 +10,7 @@ anchorLinks:
 
 #------------------------------------------------------------------------------
 # Panel Config
+datapoint: "last"
 
 cellIdPreamble: "cell-"
 cells: 
