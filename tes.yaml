@@ -59,6 +59,7 @@ cells:
     link: *grafana-home
   active_workers:
     dataRef: "A"
+    datapoint: "last"
     label:
       separator: "cr"
       units: "none"
