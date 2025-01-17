@@ -1,0 +1,46 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+datapoint: "last"
+#background:
+#  darkThemeColor: "white"
+
+
+cellIdPreamble: "cell-"
+cells: 
+  testes:
+    dataRef: "tesi"
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.com/"      
+  tos:
+    dataRef: "tesa"
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.com/"
+  tos2:
+    dataRef: "teso"
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.com/"
