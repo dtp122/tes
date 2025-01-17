@@ -64,7 +64,7 @@ cells:
       separator: "cr"
       units: "none"
       decimalPoints: 0
-    labelColor:
+    fillColor:
       gradientMode: "none"
       thresholds:
         - {color: "red", level: 0}        
