@@ -15,7 +15,7 @@ datapoint: "last"
 #  darkThemeColor: "white"
 
 
-cellIdPreamble: "cell-"
+#cellIdPreamble: "cell-"
 cells: 
   drawio:
     link:
@@ -61,7 +61,7 @@ cells:
         - {color: "green", level: 0}
         - {color: "orange", level: 100}
     link: *grafana-home
-  active_workers:
+  testes:
     dataRef: "tesi"
     label:
       separator: "cr"
