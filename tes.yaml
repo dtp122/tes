@@ -27,7 +27,7 @@ cells:
     link:
       url: "https://grafana.com/"      
   tos:
-    dataRef: "tesi"
+    dataRef: "tesa"
     fillColor:
       gradientMode: "none"
       thresholds:
@@ -36,7 +36,7 @@ cells:
     link:
       url: "https://grafana.com/"
   tos2:
-    dataRef: "tesi"
+    dataRef: "teso"
     fillColor:
       gradientMode: "none"
       thresholds:
