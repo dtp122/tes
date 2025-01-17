@@ -15,7 +15,7 @@ datapoint: "last"
 #  darkThemeColor: "white"
 
 
-#cellIdPreamble: "cell-"
+cellIdPreamble: "cell-"
 cells: 
   drawio:
     link:
