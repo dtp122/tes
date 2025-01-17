@@ -65,8 +65,9 @@ cells:
       units: "none"
       decimalPoints: 0
     labelColor:
-      gradientMode: "hue"
+      gradientMode: "none"
       thresholds:
-        - {color: "#888888", level: 0}
-        - {color: "light-blue", level: 100}
-    link: *grafana-home        
+        - {color: "green", level: 1}
+        - {color: "red", level: 0}
+    link:
+      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"      
