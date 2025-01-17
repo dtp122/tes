@@ -87,7 +87,7 @@ cells:
         - {color: "green", level: 1}
     link:
       url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"      
-  tos:
+  tos1:
     dataRef: "tesi"
     label:
       separator: "cr"
