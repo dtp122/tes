@@ -87,4 +87,30 @@ cells:
         - {color: "green", level: 1}
     link:
       url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"      
-
+  tos:
+    dataRef: "tesi"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"
+  tos2:
+    dataRef: "tesi"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"       
+      
