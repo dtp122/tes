@@ -28,7 +28,7 @@ cells:
       url: "https://grafana.com/"      
   tos:
     dataRef: "tesi"
-    strokeColor:
+    fillColor:
       gradientMode: "none"
       thresholds:
         - {color: "red", level: 0}        
