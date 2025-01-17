@@ -80,7 +80,7 @@ cells:
       separator: "cr"
       units: "none"
       decimalPoints: 0
-    strokeColor:
+    fillColor:
       gradientMode: "none"
       thresholds:
         - {color: "red", level: 0}        
