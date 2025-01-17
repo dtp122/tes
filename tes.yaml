@@ -59,7 +59,7 @@ cells:
         - {color: "orange", level: 100}
     link: *grafana-home
   active_workers:
-    dataRef: "A"
+    dataRef: "ICMP ping"
     label:
       separator: "cr"
       units: "none"
