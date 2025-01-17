@@ -11,8 +11,8 @@ anchorLinks:
 #------------------------------------------------------------------------------
 # Panel Config
 datapoint: "last"
-background:
-  darkThemeColor: "white"
+#background:
+#  darkThemeColor: "white"
 
 
 cellIdPreamble: "cell-"
