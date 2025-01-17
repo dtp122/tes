@@ -29,7 +29,7 @@ cells:
         - {color: "red", level: 0}        
         - {color: "green", level: 1}
     link:
-      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"      
+      url: "https://grafana.com/"      
   tos:
     dataRef: "tesi"
     label:
@@ -42,7 +42,7 @@ cells:
         - {color: "red", level: 0}        
         - {color: "green", level: 1}
     link:
-      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"
+      url: "https://grafana.com/"
   tos2:
     dataRef: "tesi"
     label:
@@ -55,5 +55,5 @@ cells:
         - {color: "red", level: 0}        
         - {color: "green", level: 1}
     link:
-      url: "https://grafana.dtp.net.id:3000/d/IIhWH_x4k/link-cimanggis?orgId=1&refresh=auto"       
+      url: "https://grafana.com/"    
       
