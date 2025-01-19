@@ -27,7 +27,7 @@ cells:
         # Check if the data is 1 or 0
         - "isGreen = data['tesi'][1][0] == 1 ? 1 : 0"
         #- "isRed = data['tesi'][1][0] == 0 ? 1 : 0"
-        - "utils.log('isGreen value:', isGreen, 'data:', data)"
+        - "utils.log('isGreen value:', isGreen)"
         # Calculate elapsed time since the panel started (using time-based formula in MathJS)
         #- "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
         #- "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
