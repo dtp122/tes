@@ -26,17 +26,17 @@ cells:
       formulas:
         # Check if the data is 1 or 0
         - "isGreen = data['tesi'][1][0] == 1 ? 1 : 0"
-        - "isRed = data['tesi'][1][0] == 0 ? 1 : 0"
+        #- "isRed = data['tesi'][1][0] == 0 ? 1 : 0"
         - "utils.log('isGreen value:', isGreen, 'data:', data)"
         # Calculate elapsed time since the panel started (using time-based formula in MathJS)
-        - "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
-        - "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
+        #- "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
+        #- "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
         # Determine the fill color
         - "fillColor = isGreen == 1 ? '#00FF00' : '#FF0000'"
       drives:
         # Apply the calculated fill color
         - elementName: "path"
           attribsSet:
-            fill: "fillColor"
+            style: "fill: ${fillColor};"
       link:
         url: "https://grafana.com/"
