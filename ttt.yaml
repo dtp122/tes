@@ -17,28 +17,13 @@ datapoint: "last"
 
 cellIdPreamble: "cell-"
 cells: 
-  asdf:
+  satu:
     dataRef: "tesi"
     bespoke:
-      namespace: "blinkingNamespace"
-      constants:
-        blinkDuration: 3   
-      formulas:
-        # Check if the data is 1 or 0
-        - "isGreen = data['tesi'] == 1 ? 1 : 0"
-        - "isRed = data['tesi'] == 0 ? 1 : 0"
-  
-        # Calculate elapsed time since the panel started (using time-based formula in MathJS)
-        - "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
-        - "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
-  
-        # Determine the fill color
-        - "fillColor = isGreen == 1 ? '#00FF00' : (isRed == 1 && elapsedTime < blinkDuration && blinkPhase == 1 ? '#FF0000' : (isRed == 1 ? '#800000' : '#FFFFFF'))"
       drives:
-        # Apply the calculated fill color
         - elementName: "path"
           elementPosition: 1
           attribsSet:
-            fill: "fillColor"
+            visibility: "data['tesi'][1][0] == 1 ? 'hidden' : 'visible'"
       link:
         url: "https://grafana.com/"
