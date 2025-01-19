@@ -25,8 +25,8 @@ cells:
         blinkDuration: 3   
       formulas:
         # Check if the data is 1 or 0
-        - "isGreen = data['mydata'] == 1 ? 1 : 0"
-        - "isRed = data['mydata'] == 0 ? 1 : 0"
+        - "isGreen = data['tesi'] == 1 ? 1 : 0"
+        - "isRed = data['tesi'] == 0 ? 1 : 0"
   
         # Calculate elapsed time since the panel started (using time-based formula in MathJS)
         - "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
