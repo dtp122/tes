@@ -37,7 +37,7 @@ cells:
       drives:
         # Apply the calculated fill color
         - elementName: "path"
-          elementPosition: 6 
+          elementPosition: 1 
           attribsSet:
             fill: "fillColor"
       link:
