@@ -24,6 +24,6 @@ cells:
         - elementName: "path"
           elementPosition: 1
           attribsSet:
-            visibility: "data['tesi'] == 1 ? 'hidden' : 'visible'"
+            visibility: "data['tesi'] < 1 ? 'hidden' : 'visible'"
     link:
       url: "https://grafana.com/"
