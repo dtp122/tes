@@ -33,7 +33,7 @@ cells:
         - "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
   
         # Determine the fill color
-        - "fillColor = isGreen == 1 ? '#00FF00' : (isRed == 1 && elapsedTime < blinkDuration && blinkPhase == 1 ? '#FF0000' : (isRed == 1 ? '#800000' : '#FFFFFF'))"
+        - "fillColor ='#00FF00'"
       drives:
         # Apply the calculated fill color
         - elementName: "path"
