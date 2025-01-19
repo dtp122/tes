@@ -1,0 +1,44 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+datapoint: "last"
+#background:
+#  darkThemeColor: "white"
+
+
+cellIdPreamble: "cell-"
+cells: 
+  asdf:
+    dataRef: "tesi"
+    bespoke:
+      namespace: "blinkingNamespace"
+      constants:
+        blinkDuration: 3   
+      formulas:
+        # Check if the data is 1 or 0
+        - "isGreen = data['mydata'] == 1 ? 1 : 0"
+        - "isRed = data['mydata'] == 0 ? 1 : 0"
+  
+        # Calculate elapsed time since the panel started (using time-based formula in MathJS)
+        - "elapsedTime = (${__time} / 1000) % blinkDuration"  # Time in seconds, modulo blink duration
+        - "blinkPhase = floor(elapsedTime) % 2"  # Alternates between 0 and 1 every second
+  
+        # Determine the fill color
+        - "fillColor ='#00FF00'"
+      drives:
+        # Apply the calculated fill color
+        - elementName: "path"
+          elementPosition: 1
+          attribsSet:
+            fill: "fillColor"
+      link:
+        url: "https://grafana.com/"
