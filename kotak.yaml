@@ -1,0 +1,42 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+datapoint: "last"
+#background:
+#  darkThemeColor: "white"
+
+
+cellIdPreamble: "cell-"
+cells:
+  my-rectangle:  # Replace with your shape's ID
+    dataRef: "A"  # Bind to your query result (refId: "A" in your JSON)
+    bespoke:
+      namespace: "blinking-rectangle"  # Unique namespace for this shape
+      dataRefs:
+        - "A"  # Bind to your query result
+      formulas:
+        - "blinkValue = data['A'] === 0 ? (Math.sin(Date.now() / 500) > 0 ? 1 : 0) : 1"  # Blinking formula
+      drives:
+        - elementName: "rect"  # Target the <rect> element
+          attribsSet:
+            fill: "data['A'] === 1 ? 'green' : (blinkValue === 1 ? 'red' : 'transparent')"  # Toggle fill color
+    link:
+      url: "https://facebook.com/"
+  tos2:
+    dataRef: "teso"
+    fillColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "red", level: 0}        
+        - {color: "green", level: 1}
+    link:
+      url: "https://grafana.com/"
