@@ -25,13 +25,11 @@ cells:
         - "A"  # Bind to your query result
       formulas:
         - "time = t / 500"  # Time-based value for blinking
-        - "blinkValue = (sin(time) + 1) / 2"  # Map sin wave to [0, 1]
-        - "utils.log('Data Value:', data['Value'])"
-        - "utils.log('Blink Value:', blinkValue)"
+        - "blinkValue = floor(time) % 2"  # Blinking logic (toggles between 0 and 1 every second)
       drives:
         - elementName: "rect"  # Target the <rect> element
           attribsSet:
-            fill: "data['Value'] == 1 ? 'green' : (blinkValue > 0.5 ? 'red' : 'transparent')"  # Toggle fill color
+            fill: "data['Value'] == 1 ? 'green' : (blinkValue == 1 ? 'red' : 'transparent')"  # Toggle fill color
     link:
       url: "https://facebook.com/"
   tos2:
